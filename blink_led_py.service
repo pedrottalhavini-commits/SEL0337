@@ -3,6 +3,7 @@ Description= Blink LED
 After=multi-user.target
 
 [Service]
+# Garante que seja Python 3 explicitamente
 ExecStart=/bin/python /home/sel/1444/blink_led.py
 #ExecStop=
 user=sel
