@@ -4,5 +4,6 @@ No código "blink_led.py", criou-se um código em Python para ser executado na R
 
 Na segunda parte dessa prática, fez-se uma intrdução ao Git/GitHub para manejo de versões de códigos e documentos. Por meio disso, foram apresentados comandos básicos para se trabalhar com Git por meio do terminal de comandos da RaspiBerry Py.
 
-<div align='"center">
-<img src=![Image](https://github.com/user-attachments/assets/c40a9e6a-0871-4560-997f-2c4bc5cc05f5)
+Por meio dos comandos aprendidos, esse repositório foi clonado na Rasp, foi criada uma chave para gerenciar seu acesso ao repositório, foram feitos os commits dos códigos e foi salvo o histórico de comandos. Tudo a partir da própria Raspberry Pi, eliminando a necessidade de acessar o GitHub por um navegador.
+
+![WhatsApp Image 2025-12-01 at 16 05 51](https://github.com/user-attachments/assets/26cd37e1-738a-4582-993a-6730ca065e7e)
