@@ -1,12 +1,11 @@
-[Unit]
-Description= Blink LED
-After=multi-user.target
+[Unit] # Início da seção de metadados e dependências do serviço
+Description= Blink LED # Uma descrição curta que aparecerá nos logs e no comando 'systemctl status'
+After=multi-user.target # Ordem de boot: diz para só iniciar este serviço após o sistema carregar o modo multi-usuário
 
-[Service]
-# Garante que seja Python 3 explicitamente
-ExecStart=/bin/python /home/sel/1444/blink_led.py
-#ExecStop=
-user=sel
+[Service # Início da seção que define como o processo deve ser executado
+ExecStart=/bin/python /home/sel/1444/blink_led.py # O caminho do comando a ser rodado
+#ExecStop= # Comando para rodar ao parar o serviço, nesse caso comentado
+user=sel # Define que o script rodará com as permissões do usuário 'sel'
 
-[Install]
-WantedBy=multi-user.target
+[Install] # Seção usada apenas ao rodar 'systemctl enable'
+WantedBy=multi-user.target # Cria um link para que esse serviço inicie automaticamente sempre que o sistema entrar no nível 'multi-user'
